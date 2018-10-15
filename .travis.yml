@@ -14,8 +14,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: dea9b59df7e8345fea4bb7c049e8a8a840b6e247
+    secure: ZKneZjoH6Trm7oquJbjCy4SPMaQ5QCDJSjQoer3xnvTDZCFhmPvqbII1D9VNa7mxFYKpU0N86moKYu6RqACDfP5Ga/E9UblFVJrX+cdA1dx9Ds/aWvYOZUd6XM/RluZYr+klNGs+uY9mbaUF4IrZh9X1POiTye9W4ZyVo0yDa3gmCmKppSiScxJVtgsa2dPgKepvrBSaS3a1JW2kSLOAHWLdJX53XOCg4L6FWyDUE0UKguP4P6kKHR3zpWhkftF2k7ESwQAQkv3TBjzgA1HeCf0mAx5/uwdHL7KF7sWYg/vNx8NUyidyU4Dymhgizf7QMliMKSjV1QLCkuNEXt9HtgmbfjV6I9ig5JtILXTGlcIkxSIPl+bmjQA6vF7+KqM+ymdSmv0ak/xvgRU7Pr/YqgSUH72Qst9++PX4hXrb8l1lkfbSRAuoehADIew4fsupG5XdRh6XjdvP/rt77lkuPwYTiNfeIE1nciRgCqXTa6MxHnbf2tS7gQF6cg303hVTSX3gMhF3oRu0jlMmalrw39XcijjbOKukxwCX1dLUzAjoXuGPDFRsKm++7+rN3sdrkkFh/GmmrD2fgDfgXxQ893UURcy9zweq+YKYOXYc0+HGqdfHj4a21w7CjVVXCMo4ntv7Tmo6gfzMGrhdhBja5cJP4o5/BbKNN3DTe+r9YdY=
   file: app/build/outputs/apk/app-release.apk
-  skip_cleanup: true
   on:
     repo: chenleicrm/helloci
