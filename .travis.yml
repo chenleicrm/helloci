@@ -16,7 +16,7 @@ deploy:
   user: "chenleicrm"
   password: "sunziwei520"
   api_key:
-    secure: "dFcndVSnNHGfyg18914SNYhedNja9wcp1f1mOCxXbnpY+fH+88GM89r+2+jbvPc2Ekg6bZfn1UfKkckgikQAuwYru0Pi3vRuykKUKyCYEZQ7VB9HtbVM++jFzHk3Rma6XJjpVm1+rLIw2RJALARQ8QMISctE9zwuwZ7oVC0jZGnUsszOSl0hMdjzdC7HXhJaq13SlYydmuUUn1LxbZlL2Ozn8mMMqWsKunvktOF5Bsc7ZSt3HlDYxfrJFuAKACqm/rJOWgI0czBF8zUciEqlGVXn9ZDV4TAg2y2V1OXj/3BUg6UEFTHABYhpjUiaBYeccdMdO7V9QBpjBPmfWte6mgpAEvRV2isXUYd2nXWW1J8J8iLW2GcDpkALV7RVSTayu08RPCXy2ALOmcD0l1kIG16zth7YMZXkIF5WczQk0dRh3ZsVMcYN4wA7aJvbhQszuMhBpjuqboLOcwKHEYlACVFH9vYX/1srn4lcUSduXpZIDAbn9JkJVh649+7Vd+5VLDfc+A736GWpABg8rW8DrPtyfuLT8jdud/cGjQ5ogji+3+Vd1om9MCTjXa9PoHxpB5uR0h9XN8kmTWE/ibyg+iSlIXe5uKy+qaANpNicVyI+4JNQ+i4xJxbIPFfipelwAWRR4NJbOWn8O9+xLvMQ5ys1ANjqaHMRk6X+gXxcPBc="
+    secure: "68cd46c4c286d57307c30960904281ffa6a8358b"
   file: 'app/build/outputs/apk/app-release.apk'
   skip_cleanup: true
   on:
