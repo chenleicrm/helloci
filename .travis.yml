@@ -25,5 +25,5 @@ deploy:
 after_deploy:
     - fir login f6314b5d72a893d5a18ff4bdcb914113 #fir账号的Token
     - fir me #打印身份信息,验证是否登录成功
-    - fir p app/build/outputs/apk/app-release.apk #自动发布应用至fir内测平台
+    - fir p app/build/outputs/apk/release/app-release.apk #自动发布应用至fir内测平台
 
