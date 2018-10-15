@@ -1,4 +1,5 @@
 language: android
+sudo: false
 android:
   components:
   - tools
@@ -12,10 +13,21 @@ script:
 - "./gradlew assembleRelease"
 deploy:
   provider: releases
-  api_key:
-    secure: S17qzOrlTZXL0F7Q7e2d3T5MzfbjINd7ZVo8l9cVMUy/9tOBjPWaw3K0MJY3oeRloGp36ydgOWTVnjxrKUn7mavPyCmLEjIk571sQePjkUTVN8jNHiwbueRXDXv0UHHy+9x70FkYOcdigh06qvzEESQCPsl8O1zqLVWn/ZBm0bEmtA39EfU6rt79qd/z4oiWKQjMd34f+sPQGBQQVSOaI+TCVnyU4KqIdQEXQOmZcL9w1Mkqc6WjL7/fKMYy+pBMEFJAI04Z7VHh6igwcFH1dT4mi0I0ybIip5TrVx3CAiaGUcN5ymdXbhkB/SahRAx1YDGgJczzubx34Jt2TDVxmKqEjnQ8pwb6zWFp0Uc9yuK5I7sFNxPw96HD9DFb3glirBRobdsoLkKiPehuTrbjsDF5QU/NHUAwAki9bmUCOwY9iYxkKknOh/MW0SG1SMG40GXAI73gEgu6gEVkAUq60cuVp9FDEc3gY6SFh/btS3N0FHnT5UV7wR6KSEq9O7jd4pjZWioVV0ZqqjVDt61PqNuCuYhi6wWGbM5R/AThTr3s0zR2sqMsvtorcka7BvGwT9W1730pTBs7V2nRwNjVOdbjxZisvTbOlzbqjQLC+oqHpH8qMvqli2X3Rgp/9HiyYMX0y2W2XNgjBWpEcIBXf4xzgK/uCSgPNb+uuF49orQ=
-  file: ls
+  user: "chenleicrm"
+  password: "sunziwei520"
+  file: app/build/outputs/apk/app-release.apk
+  skip_cleanup: true
   on:
-    repo: chenleicrm/helloci
+    tags: true
+
+#deploy:
+#  provider: releases
+#  api_key:
+#    secure: S17qzOrlTZXL0F7Q7e2d3T5MzfbjINd7ZVo8l9cVMUy/9tOBjPWaw3K0MJY3oeRloGp36ydgOWTVnjxrKUn7mavPyCmLEjIk571sQePjkUTVN8jNHiwbueRXDXv0UHHy+9x70FkYOcdigh06qvzEESQCPsl8O1zqLVWn/ZBm0bEmtA39EfU6rt79qd/z4oiWKQjMd34f+sPQGBQQVSOaI+TCVnyU4KqIdQEXQOmZcL9w1Mkqc6WjL7/fKMYy+pBMEFJAI04Z7VHh6igwcFH1dT4mi0I0ybIip5TrVx3CAiaGUcN5ymdXbhkB/SahRAx1YDGgJczzubx34Jt2TDVxmKqEjnQ8pwb6zWFp0Uc9yuK5I7sFNxPw96HD9DFb3glirBRobdsoLkKiPehuTrbjsDF5QU/NHUAwAki9bmUCOwY9iYxkKknOh/MW0SG1SMG40GXAI73gEgu6gEVkAUq60cuVp9FDEc3gY6SFh/btS3N0FHnT5UV7wR6KSEq9O7jd4pjZWioVV0ZqqjVDt61PqNuCuYhi6wWGbM5R/AThTr3s0zR2sqMsvtorcka7BvGwT9W1730pTBs7V2nRwNjVOdbjxZisvTbOlzbqjQLC+oqHpH8qMvqli2X3Rgp/9HiyYMX0y2W2XNgjBWpEcIBXf4xzgK/uCSgPNb+uuF49orQ=
+#  file: ls
+#  on:
+#    repo: chenleicrm/helloci
+
+
 
 
