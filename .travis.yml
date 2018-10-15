@@ -13,6 +13,8 @@ script:
 - "./gradlew assembleRelease"
 deploy:
   provider: releases
+  user: "chenleicrm"
+  password: "sunziwei520"
   api_key: f36d2bea94ba2fcfd3900c3ff1a7be1f4b356276
   file: 'app/build/outputs/apk/app-release.apk'
   on:
