@@ -1,5 +1,5 @@
 language: android
-sudo: required
+sudo: enabled
 android:
   components:
   - tools
@@ -13,11 +13,9 @@ script:
 - "./gradlew assembleRelease"
 deploy:
   provider: releases
-  user: "chenleicrm"
-  password: "sunziwei520"
   api_key:
-    secure: "68cd46c4c286d57307c30960904281ffa6a8358b"
-  file: 'app/build/outputs/apk/app-release.apk'
+    secure: TyvICxIp28UIxx+UkfGFIqEl2CCqhlU4DFbLOCpdWYMW6RtDIj1i+LgpwiQ1Iqo891qoPNsDuQUCOrsaZ3/yUZl+c9S9vyYU1lxApseIWFCQjxzPP2pmCfjgOpt6jDp46UTTY+31YHA7P/wB5cyYMfozR/9BXzUswveS/fw6pofwlQrAWFIyj4lMbj7KwELiVXSY6ANGHvOs+5CzN4ZpBXLcbwDjICEe76iIQyPwBW4OxcvqBSS0VMwKk8W4b6AdruEDg94XXlPhPsRB77vRYWpsdJsYt0P64KGAXBKN44Fnyl54gaJeXamQBHHZfsEI7BSyN8w+gBCK9JeVZgJNTJOxuo9dAo7ga6PEhjlbQhqvMszzAIw7+Bgr76/ywGWBTNvIynkBfGB2sR/PbMkcsch0vqm8Cl7EHut6H+Y4BOd1b8t9D9yxz1TPbmHQJkYZD69p2/gukHwFY4ADdfOmKUhl918yKhUQmeOTOQsDmNYyO6BrxmINoACPhYF7I7KWqcJKU81GiIeQqyrkzYrG8TDzsEWNRefXZnFKdwoUyGLp6V23vZczZ2hBElytrhuFjv/M8BBEY7rAenSFcc4UuyoIJzw0FPqhrJaeLFnaMOx1O4k+sa6zGIgixeWrqdIfQXCLrr31b96akSS6sKPaVXJl7SHostMVNBvFyS4dbcg=
+  file: app/build/outputs/apk/app-release.apk
   skip_cleanup: true
   on:
     repo: chenleicrm/helloci
