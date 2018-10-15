@@ -1,5 +1,5 @@
 language: android
-sudo: false
+sudo: required
 android:
   components:
   - tools
@@ -15,7 +15,8 @@ deploy:
   provider: releases
   user: "chenleicrm"
   password: "sunziwei520"
-  api_key: f36d2bea94ba2fcfd3900c3ff1a7be1f4b356276
+  api_key: 68cd46c4c286d57307c30960904281ffa6a8358b
   file: 'app/build/outputs/apk/app-release.apk'
+  skip_cleanup: true
   on:
     repo: chenleicrm/helloci
